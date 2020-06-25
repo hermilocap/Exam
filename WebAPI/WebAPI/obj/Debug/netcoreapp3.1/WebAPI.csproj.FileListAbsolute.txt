@@ -125,3 +125,4 @@ C:\Users\hermilocap\Desktop\Exam\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\tr\Micros
 C:\Users\hermilocap\Desktop\Exam\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\hermilocap\Desktop\Exam\WebAPI\WebAPI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\hermilocap\Desktop\Exam\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hermilocap\Desktop\Exam\WebAPI\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csprojAssemblyReference.cache

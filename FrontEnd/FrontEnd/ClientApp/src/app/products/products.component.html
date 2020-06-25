@@ -1,0 +1,19 @@
+<h2>Productos</h2>
+<div class="table-responsive">
+  <table class="table table">
+    <thead class="thead-custom">
+      <tr>
+        <th>IdProduct</th>
+        <th>Nombre</th>
+        <th>Costo</th>
+        <th>CantidadInventario</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let item of products">
+      <td>{{item.idProduct}}</td>
+      <td>{{item.nombre}}</td>
+      <td>{{item.costo}}</td>
+      <td>{{item.cantidadInventario}}</td>
+    </tr>
+  </table>
+  </div>

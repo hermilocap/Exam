@@ -1,0 +1,34 @@
+<div class="container">
+
+  <h1>Iniciar sesion</h1>
+  <form [formGroup]="LoginForm" (ngSubmit)="OnLogin()">
+    <div class="form-group">
+      <input formControlName="Nombre" class="form-control" placeholder="Escribe el nombre del usuario" />
+      <div *ngIf="LoginForm.controls['Nombre'].invalid &&
+                 (LoginForm.controls['Nombre'].dirty||LoginForm.controls['Nombre'].touched)">
+        <div *ngIf="LoginForm.controls['Nombre'].errors.required">
+          <p class="validatemsg">El campo nombre es requerido</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="password" formControlName="Password" class="form-control" placeholder="Escribe el password" />
+      <div *ngIf="LoginForm.controls['Password'].invalid &&
+                 (LoginForm.controls['Password'].dirty||LoginForm.controls['Password'].touched)">
+        <div *ngIf="LoginForm.controls['Password'].errors.required">
+          <p class="validatemsg">El campo password es requerido</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button type="submit" [disabled]="!LoginForm.valid" class="btn btn-primary">Entrar</button>
+    </div>
+  </form>
+    <div *ngIf="flagError">
+      <div class="alert alert-warning no-border">
+        <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
+        <span class="text-semibold">Warning!</span> {{messageError}}
+      </div>
+    </div>
+
+</div>
